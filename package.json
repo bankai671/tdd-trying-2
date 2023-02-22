@@ -1,0 +1,23 @@
+{
+  "name": "tdd-trying-2",
+  "version": "1.1.0",
+  "scripts": {
+    "lint": "eslint ./part-*/*.js",
+    "jest": "jest -i",
+    "test-part1": "npm run jest -- part-1/spec/*.js",
+    "test-part2": "npm run jest -- part-2/spec/*.js",
+    "test-part3": "npm run jest -- part-3/spec/*.js",
+    "test": "npm run jest -- ./part-*/spec/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^24.1.0",
+    "jest": "^26.6.1"
+  },
+  "dependencies": {
+    "@types/jest": "^29.4.0",
+    "has-getter": "^1.0.0"
+  }
+}
